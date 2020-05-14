@@ -13,7 +13,6 @@ public class SpringMain {
 		ApplicationContext ac = new ClassPathXmlApplicationContext("spring.xml");
 		String[] names = ac.getBeanDefinitionNames();
 		for (String name : names) {
-			Object bean = ac.getBean(name);
 			Class<?> beanClass = ac.getType(name);
 			Method[] ms = beanClass.getMethods();
 			for(Method m : ms) {
@@ -24,7 +23,7 @@ public class SpringMain {
 				System.err.println(an.name());
 			}
 		}
-
+		
 	}
 
 }
