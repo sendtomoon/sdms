@@ -30,6 +30,9 @@ public class MicroServiceDispatch implements ApplicationListener<ContextRefreshe
 				}
 				Properties p = new Properties();
 				p.setProperty("name", an.name());
+				p.setProperty("value", an.value());
+				p.setProperty("group", an.group());
+				p.setProperty("weight", String.valueOf(an.weight()));
 			}
 		}
 	}

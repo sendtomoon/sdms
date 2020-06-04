@@ -16,7 +16,7 @@ public @interface MicroService {
 	String value() default "";
 	
 	/**服务分组名*/
-	String group();
+	String group() default "";
 	
 	/**权重*/
     int weight() default 0;
