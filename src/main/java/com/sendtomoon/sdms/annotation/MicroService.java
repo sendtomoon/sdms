@@ -9,6 +9,16 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface MicroService {
 
+	/**dubbo服务名*/
 	String name() default "";
+	
+	/**dubbo服务名*/
+	String value() default "";
+	
+	/**服务分组名*/
+	String group();
+	
+	/**权重*/
+    int weight() default 0;
 	
 }
