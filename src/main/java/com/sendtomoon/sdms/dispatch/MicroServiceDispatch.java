@@ -14,8 +14,8 @@ import com.sendtomoon.sdms.annotation.MicroService;
  * 微服务注解处理引导
  *
  */
-public class MicroServiceDispatch implements ApplicationListener<ContextRefreshedEvent> {
-	
+//public class MicroServiceDispatch implements ApplicationListener<ContextRefreshedEvent> {
+public class MicroServiceDispatch{
 	private ConcurrentHashMap<String, Properties> microServices = new ConcurrentHashMap<String, Properties>();
 
 	private void resloveMicroService(ApplicationContext ac) {
