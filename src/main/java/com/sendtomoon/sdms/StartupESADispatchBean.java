@@ -6,12 +6,14 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
 import com.sendtomoon.sdms.annotation.MicroService;
 
-public class StartupESADispatchBean implements ApplicationContextAware{
+
+public class StartupESADispatchBean implements InitializingBean{
 
 	private ConcurrentHashMap<String, Properties> microServices = new ConcurrentHashMap<String, Properties>();
 	
@@ -39,6 +41,11 @@ public class StartupESADispatchBean implements ApplicationContextAware{
 		for(Set<String> key : microServices.entrySet()) {
 			
 		}
+	}
+
+	public void afterPropertiesSet() throws Exception {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
