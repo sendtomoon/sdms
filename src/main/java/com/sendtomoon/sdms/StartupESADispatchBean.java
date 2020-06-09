@@ -11,6 +11,7 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
+import com.alibaba.dubbo.config.ApplicationConfig;
 import com.sendtomoon.sdms.annotation.MicroService;
 
 
