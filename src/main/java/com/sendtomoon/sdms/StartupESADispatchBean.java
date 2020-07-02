@@ -31,6 +31,7 @@ public class StartupESADispatchBean implements InitializingBean,ApplicationConte
 	private void toDubbo() {
 		for(ConcurrentHashMap.Entry<String, Properties> entry : microServices.entrySet()) {
 			ApplicationConfig config = new ApplicationConfig();
+			
 		}
 	}
 
